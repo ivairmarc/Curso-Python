@@ -61,11 +61,11 @@ def alterar_volume_deck(taxa_ideal, vcil, vdeck):
    
 
 
-diametro_cilindro = 85.5
-altura_curso_cilindro  = 69
+diametro_cilindro = 82
+altura_curso_cilindro  = 77
 altura_cilindro_ponto_morto_superior =2
 volume_camara_combustao = 34
-taxa_ideal = 9.5
+taxa_ideal = 11
 
 area = calc_volume_cilindro(diametro_cilindro)
 
