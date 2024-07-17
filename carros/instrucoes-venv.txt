@@ -25,7 +25,7 @@
  - python manage.py migrate
 
 # Create super user
- - python manage.py createsuperuser   - user: pycoder pass: master
+ - python manage.py createsuperuser   ADM =  user: pycoder pass: master
 
 # start server
  - python manage.py runserver
