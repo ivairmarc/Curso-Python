@@ -3,9 +3,11 @@
 {% block content %}
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
-        <table>
-            {{ new_car_form.as_table }}
-        </table>
+        <div class="mb-3">
+            <div class="col-sm-7 mb-1 mt-1">
+                {{ new_car_form }}
+            </div>
+        </div>
 
         <input type="submit" value="Cadastrar" class="btn btn-primary p-1">
 

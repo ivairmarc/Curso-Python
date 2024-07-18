@@ -23,6 +23,7 @@
     </style>
     <link href="{% static 'css/sidebars.css' %}" rel="stylesheet">
     <link href="{% static 'css/dashboard.css' %}" rel="stylesheet">
+    
 
 </head>
 
@@ -116,13 +117,13 @@
               </li>
               
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false"" href="{% url 'cars_list' %}">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"/></svg>
+                <a class="nav-link dropdown-toggle" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer"/></svg>
                   Cars
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown04">
                   <li><a class="dropdown-item" href="{% url 'new_car' %}">New Car</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="{% url 'cars_list' %}">List Cars</a></li>
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>

@@ -2,6 +2,14 @@ from django import forms
 from cars.models import Brand, Car
 
 
+class CarModelForm(forms.ModelForm):
+
+    class Meta:
+        model = Car
+        fields = '__all__'
+
+
+
 class CarForm(forms.Form):
     model = forms.CharField(max_length=199)
     brand = forms.ModelChoiceField(Brand.objects.all())
