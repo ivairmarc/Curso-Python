@@ -1,15 +1,22 @@
-{% extends 'base_generic.html' %}
+{% extends 'base.html' %}
 {% load bootstrap %}
+
+
+{% block page %}
+    Cadastrar
+{% endblock%}
 
 {% block content %}
     <form method="post" enctype="multipart/form-data">
         {% csrf_token %}
         
-        <div class="mb-2 mt-2 ">
+        <div class="mb-1 mt-1 col-lg-8 px-4">
             {{ new_car_form|bootstrap }}
+            <input type="submit" value="Save" class="btn btn-success ">
+            
         </div>
     
-        <input type="submit" value="Save" class="btn btn-primary p-1">
+        
 
     </form>
 {% endblock %}
