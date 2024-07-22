@@ -170,6 +170,7 @@
                     </button>
 
                     <!-- Topbar Search -->
+                    {% block search %}
                     <form method="GET" action="{% url 'cars_list' %}" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                         <div class="input-group">
                             <input type="text" name="search" class="form-control bg-light border-0 small" placeholder="Search for..."
@@ -181,7 +182,7 @@
                             </div>
                         </div>
                     </form>
-
+                    {% endblock %}
                     <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
 
@@ -370,7 +371,7 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">
-                            {% block page %}
+                            {% block page-title %}
                                 Dashboard
                             {% endblock%} 
                         </h1>
@@ -380,16 +381,16 @@
 
                     <div class="row">
                         <!-- Area Chart -->
-                        <div class="col-xl-12 col-lg-7 ">
+                        <div class="col-md-auto ">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
-                                <div class="album">
-                                    <div class="row" >
+                                {% block content-page%}
+                                
                                       {% block content %}
                                       
                                       {% endblock %}
-                                    </div>
-                                </div> 
+                                   
+                                {% endblock %}
                             </div>
                         </div>
                     </div>
