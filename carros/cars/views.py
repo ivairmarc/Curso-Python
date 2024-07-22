@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from cars.models import Car
+from cars.models.car_model import Car
 from cars.forms import CarModelForm
 
 

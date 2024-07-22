@@ -1,5 +1,5 @@
 from django import forms
-from cars.models import Brand, Car
+from cars.models.car_model import Car
 
 
 class CarModelForm(forms.ModelForm):
