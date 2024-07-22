@@ -2,8 +2,8 @@
 
 Primeiro Template(base_generic.html)
 
-![alt text](image.png)
+![alt text](/read_img/image.png)
 
 Novo Template (base.html)
 
-![alt text](image-2.png)
+![alt text](/read_img/image-2.png)
